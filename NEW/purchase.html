@@ -7,7 +7,8 @@
     <meta name="description" content="GarmentBasePro Apparel Management Software">
     <meta name="author" content="">
     <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/contact.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.css" rel="stylesheet">  
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -137,7 +138,8 @@
 		float: left;
 	}
 	input#tran_code_22.radioinput {
-		margin-top: 5px;
+		margin-top: 3px;
+		margin-left: 5px;
 		}
     </style>
 
@@ -157,13 +159,9 @@
   <body>
 
     <div class="container-narrow">
-     <div class="header"> 
-     	<div class="main">
-         <div class="logo">
+		<div class="logo">
 				<h1><a href="index.html"><img class="logo" src="assets/img/garment/logo.png" alt="" /></a><h2>Software for the Apparel and Fashion Industry</h2></h1>
-		 </div>		 
-        </div>    
-  </div>
+	</div>	
       
       <div class="masthead">
          <nav class="nav">
@@ -173,7 +171,7 @@
               <li><a class="download" href="download.html">Download</a></li>
               <li><a class="support" href="support.html">Support</a></li>
               <li><a class="consulting" href="consulting.html">Consulting</a></li>
-              <li class="current"><a class="shoppingcart" href="purchase.html"><img src="assets/img/garment/shopping_cart.png" alt="" />Purchase</a></li>
+              <li class="current" id="carts"><a class="shoppingcart" href="purchase.html"><img src="assets/img/garment/shopping_cart.png" alt="" />Purchase</a></li>
           </ul>
       </nav>
 	
@@ -189,6 +187,20 @@
                       <div class="span12">
                         <form class="form-horizontal" id="registerHere" method='post' action='form.php'>
                           <fieldset>
+                           <div class="control-group">
+                            <label class="control-label" for="input01">Users</label>
+                              <div class="controls">
+                                    <select class="users" name="users"> 
+                                        <option value="" selected="selected">Number of Users</option> 
+                                        <option value="Twitter">100,000</option> 
+                                        <option value="fb">80,000</option> 
+                                        <option value="youtube">50,000</option> 
+                                        <option value="flickr">30,000</option> 
+                                        <option value="google">10,000</option> 
+                                        <option value="yahoo">5,000</option> 
+                                        <option value="linkedin">1,000</option> 
+                                    </select><br/><br/>
+                              </div>	 
                             <div class="control-group">
                               <label class="control-label" for="input01">Full Name</label>
                               <div class="controls">
@@ -328,7 +340,7 @@
                                   </div>
 
                                 <div class="btn-group" data-toggle-name="is_private" data-toggle="buttons-radio" >
-                                  <label>No<input id="yes" style="width: 20px;" type='radio' name='yes' value='1'/></label>
+                                  <label>No<input type="radio" class="radioinput" name="tran_code" id="tran_code_22" value="22"/></label>
                                 </div>
                                   <input type="hidden" name="is_private" value="0" /> 
                            </div>
@@ -345,13 +357,12 @@
           </div><!--/row-->
         </div><!--/span-->
       </div><!--/row-->
-                  <hr>   
+    </div> <!-- /container -->
+</div><!--/.fluid-container-->
+      <hr>   
       <div class="footer">
         <div class="copyright">&copy; 2013 Island Technologies. All Rights Reserved.<span class="links"><a href="privacy.html">Privacy</a> <a href="terms.html">Terms</a> <a href="contact.html">Contact</a> <a href="company.html">Company</a></span></div>
       </div>
-
-    </div> <!-- /container -->
-</div><!--/.fluid-container-->
 
      <!-- Le javascript
     ================================================== -->
@@ -411,7 +422,7 @@
 						required:true,
 						add: true
 					},
-					state:"required"
+					user:"required"
 				    },
 				    messages:{
 					user_name:"Enter your first and last name",
@@ -459,7 +470,7 @@
 						required:"Enter your Note",
 						equalTo:"Enter Note"
 					},
-					state:"Select Gender"
+					users:"Select users"
 				},
 				errorClass: "help-inline",
 				errorElement: "span",
@@ -473,9 +484,6 @@
 			});
 		});
 	  </script>
-      
-
-<iframe src="http://demos.9lessons.info/counter.html" frameborder="0" scrolling="no" height="0"></iframe>
   
 </body>
 </html>

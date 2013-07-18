@@ -221,7 +221,7 @@ img {
 }
 
 img.logo {
-	margin-left: 20px;
+	margin: 20px 20px 15px 20px;
 	}
 	
 #map_canvas img,
@@ -451,7 +451,7 @@ button.btn a {
   padding: 10px 50px 10px 50px;
   border-radius: 5px 5px 5px 5px;
   font-size: 18px;
-  margin-left: 320px;
+  margin-left: 310px;
   border: medium none;
   font-size: 20px;
   font-weight: 300;
@@ -547,11 +547,12 @@ p.techologies {
 	float: right;
 	line-height: 26px;
 	margin-right: 120px;
-	margin-top: -60px;
+	margin-top: 5px;
 	}
 select {
-  width: 300px;
-  height: 35px;
+  width: 294px;
+  height: 40px;
+  margin-top: -10px;
   }
 .btn_submit {
   font-size: 20px;
@@ -672,49 +673,53 @@ span.contact a {
 	padding: 14px 24px;
   }
 
-  /* Supporting marketing content */
-  .marketing p + h4 {
-	margin-top: 28px;
+/* Supporting marketing content */
+.marketing p + h4 {
+margin-top: 28px;
+}
+
+.content {
+float:right;
+margin-top:-80px;
+}
+
+.copyright span.links a {
+  color: rgb(136, 157, 126);
+  font-size: 11px;
+  padding-left: 12px;
+}
+.main_list_01{
+margin: 50px 0 0 70px;
+}
+
+body {
+padding-top: 20px;
+padding-bottom: 40px;
+}
+
+/* Custom container */
+.container-narrow {
+margin: 0 auto;
+max-width: 900px;
+}
+.container-narrow > hr {
+margin: 30px 0;
+}
+
+.content {
+  float:right;
+  margin-top:-80px;
   }
   
-  .content {
-	  float:right;
-	  margin-top:-80px;
-	  }
-	  
-  .copyright span.links a {
-		color: rgb(136, 157, 126);
-		font-size: 11px;
-		padding-left: 12px;
-	}
-	.main_list_01{
-	  margin: 50px 0 0 70px;
-	  }
-
-	body {
-	  padding-top: 20px;
-	  padding-bottom: 40px;
+.copyright span.links a {
+	color: rgb(136, 157, 126);
+	font-size: 11px;
+	padding-left: 12px;
+}
+.main_list_01{
+	margin: 50px 0 0 70px;
 	}
 
-	/* Custom container */
-	.container-narrow {
-	  margin: 0 auto;
-	  max-width: 900px;
+.text_contact a:hover {
+	color:#6ca251;
 	}
-	.container-narrow > hr {
-	  margin: 30px 0;
-	}
-
-	.content {
-		float:right;
-		margin-top:-80px;
-		}
-		
-	.copyright span.links a {
-		  color: rgb(136, 157, 126);
-		  font-size: 11px;
-		  padding-left: 12px;
-	  }
-	.main_list_01{
-		  margin: 50px 0 0 70px;
-		  }
